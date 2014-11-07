@@ -1,0 +1,15 @@
+{
+  "name": "MultiVision",
+  "version": "1.0.0",
+  "description": "extreme training",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "shuhao wang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.10.1",
+    "jade": "^1.7.0"
+  }
+}
