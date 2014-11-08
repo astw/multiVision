@@ -1,9 +1,18 @@
 extends ../includes/layout
 
 block main-content
-   section.content
-       div(ng-view)
-           h1 "ggod"
+	.navbar.navbar-inverse.navbar-fixed-top
+		.container
+			.navbar-header 
+				a.navbar-band(href="/") MultiVision
+					h6 -Extreame Tech Training
+			.navbar-collapse.collaps
+				ul.nav.navbar-nav
+					li
+						a(href="/") Home
+	section.content
+		div(ng-view)
+			{{ myVar }} 
 
-               {{ myVar }}
-        h2= mongoMessage
+	footer.container.text-center
+		p &copy 2014
