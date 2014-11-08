@@ -1,1 +1,1 @@
-web:node server2-adfs.js
+web:node server.js
