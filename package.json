@@ -4,7 +4,7 @@
   "description": "extreme training",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "nodemon server.js"
   },   
   "author" : "shuhao wang",
   "license": "ISC",
@@ -18,7 +18,8 @@
     "jade": "^1.7.0",
     "mongoose": "^3.8.18",
     "morgan": "^1.5.0",
-    "stylus": "^0.49.3"
+    "stylus": "^0.49.3",
+    "nodemon":"*"
   },
   "devDependencies": {
     "bower": "^1.3.12"
