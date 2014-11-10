@@ -28,5 +28,4 @@ module.exports = function (app, config ) {
     }));
 
     app.use(express.static(config.rootPath + "/public"));
-
 };
