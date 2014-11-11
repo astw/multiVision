@@ -5,7 +5,7 @@ angular.module("app")
     
     $scope.signin = function(username, password){
         console.log("need to do");
-        mvAuth.authenticationUser(username,password).
+        mvAuth.authenticateUser(username,password).
             then(function(success){
                 if(success){
                     mvNotifier.notify("You have successfully signed in");
