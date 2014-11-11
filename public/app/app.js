@@ -16,22 +16,6 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
             {
                 templateUrl: '/partials/admin/user-list',
                 controller: 'mvUserListCtrl',
-                /* resolve:{
-                    auth : function(mvAuth){
-                        return mvAuth.authorizeCurrentUserForRoute("admin");
-                    }
-                }
-                resolve: {
-                    auth: function(mvIdentity, $q){
-                        if(this.currentUser && this.currentUser.roles.indexOf("admin") > -1) {
-                            return true
-                        }else{
-                            return $q.reject("not authorized");
-                        }
-                    }
-                }
-                */
-
                 resolve: routeRoleChecks.admin
             });
 });
@@ -42,4 +26,4 @@ angular.module("app").run(function($rootScope, $location){
             $location.path("/");
         }
     })
-})
+});
